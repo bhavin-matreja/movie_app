@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/card_margin"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rel_lay_movie_image_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:id="@+id/iv_movie_poster"
+                    android:layout_width="@dimen/book_image_width"
+                    android:layout_height="@dimen/book_image_height"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/placeholder"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/movie_desc_padding"
+                android:layout_toRightOf="@+id/rel_lay_movie_image_container">
+
+                <TextView
+                    android:id="@+id/tv_movie_title"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mission Impossible - Fallout" />
+
+                <TextView
+                    android:id="@+id/tv_title_release_date"
+                    android:text="@string/release_date"
+                    android:layout_below="@+id/tv_movie_title"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_movie_release_date"
+                    android:textSize="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_movie_title"
+                    android:layout_toRightOf="@+id/tv_title_release_date"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="25-07-2018" />
+
+                <TextView
+                    android:id="@+id/tv_title_rating"
+                    android:layout_below="@+id/tv_title_release_date"
+                    android:text="@string/rating"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_rating"
+                    android:layout_below="@+id/tv_title_release_date"
+                    android:layout_toRightOf="@+id/tv_title_rating"
+                    android:text="7.1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

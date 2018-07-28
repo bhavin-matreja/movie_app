@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_lay_movie_detail"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/common_app_bar" />
+
+    <ImageView
+        android:id="@+id/iv_movie_poster"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/tv_title_movie_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_movie_poster"
+        android:layout_marginTop="10dp"
+        android:text="Movie Name : "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_movie_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_movie_poster"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tv_title_movie_name"
+        android:text="MovieName" />
+
+    <TextView
+        android:id="@+id/tv_title_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title_movie_name"
+        android:layout_marginTop="10dp"
+        android:text="Description : "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_movie_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title_movie_name"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tv_title_description"
+        android:text="Description" />
+
+    <TextView
+        android:id="@+id/tv_title_runtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_movie_desc"
+        android:layout_marginTop="10dp"
+        android:text="Runtime : "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_movie_runtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_movie_desc"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tv_title_runtime"
+        android:text="Movie Runtime" />
+
+    <TextView
+        android:id="@+id/tv_title_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title_runtime"
+        android:layout_marginTop="10dp"
+        android:text="Genre : "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_movie_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_movie_runtime"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tv_title_genre"
+        android:text="Action, Adventure" />
+
+
+</RelativeLayout>
